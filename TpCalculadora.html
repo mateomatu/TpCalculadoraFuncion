@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tp Calculadora</title>
+  </head>
+  <body>
+
+
+
+
+
+
+<script type="text/javascript">
+
+function calcular() {
+  var valor1 = parseInt(prompt('Ingrese el primer valor'));
+  var valor2 = parseInt(prompt('Ingrese el segundo valor'));
+
+  var calculo = prompt('Decida la operacion que desea realizar');
+
+  if (calculo == 'suma') {
+    return 'El resultado de la suma entre ' + valor1 + ' y ' + valor2 +  ' es de: ' + (valor1 + valor2);
+  } else if (calculo == 'multiplicacion') {
+    return 'El resultado de la multiplicacion entre ' + valor1 + ' y ' + valor2 +  ' es de: ' + (valor1 * valor2);
+  } else if (calculo == 'division' && valor2 != 0) {
+    return 'El resultado de la division entre ' + valor1 + ' y ' + valor2 +  ' es de: ' + (valor1 / valor2);
+  } else if (calculo == 'resta') {
+    return 'El resultado de la resta entre ' + valor1 + ' y ' + valor2 +  ' es de: ' + (valor1 - valor2);
+  } else {
+    return "Por favor ingrese una operación valida, asegurese de haber escrito la operacion correcta. En caso de division, asegurese por favor de no dividir por 0."
+  }
+}
+
+console.log(calcular());
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
